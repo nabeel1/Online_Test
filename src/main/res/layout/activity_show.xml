@@ -6,9 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".Show_Activity">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edx_search"
+        android:hint="Enter Name to Search"
+        android:layout_marginTop="20px"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search"
+        android:layout_below="@id/edx_search"
+        android:layout_marginTop="20px"
+        android:text="Enter to Search"
+        />
+
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_below="@id/btn_search"/>
 
 </RelativeLayout>

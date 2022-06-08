@@ -6,9 +6,13 @@ import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -24,7 +28,7 @@ public class Show_Activity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
     private ListView lv;
-
+    public String search_String = null;
     // URL to get contacts JSON
     private static String url = "https://api.androidhive.info/contacts/";
 
@@ -39,6 +43,16 @@ public class Show_Activity extends AppCompatActivity {
         contactList = new ArrayList<>();
         lv = (ListView) findViewById(R.id.list);
         new GetContacts().execute();
+
+        EditText t1 = findViewById(R.id.edx_search);
+        Button b1 = findViewById(R.id.btn_search);
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                search_String = t1.getText().toString();
+            }
+        });
 
     }
 
