@@ -42,7 +42,7 @@ public class Show_Activity extends AppCompatActivity {
 
         contactList = new ArrayList<>();
         lv = (ListView) findViewById(R.id.list);
-        new GetContacts().execute();
+
 
         EditText t1 = findViewById(R.id.edx_search);
         Button b1 = findViewById(R.id.btn_search);
@@ -51,6 +51,7 @@ public class Show_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 search_String = t1.getText().toString();
+                new GetContacts().execute();
             }
         });
 
@@ -91,6 +92,12 @@ public class Show_Activity extends AppCompatActivity {
 
                         String id = c.getString("id");
                         String name = c.getString("name");
+
+                        if(name.equals(search_String))
+                        {
+                            continue;
+                        }
+
                         String email = c.getString("email");
                         String address = c.getString("address");
                         String gender = c.getString("gender");
