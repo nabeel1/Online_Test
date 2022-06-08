@@ -12,6 +12,8 @@
         android:id="@+id/edx_search"
         android:hint="Enter Name to Search"
         android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
         />
 
     <Button
@@ -21,6 +23,8 @@
         android:layout_below="@id/edx_search"
         android:layout_marginTop="20px"
         android:text="Enter to Search"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
         />
 
     <ListView
@@ -28,6 +32,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
         android:layout_below="@id/btn_search"/>
 
 </RelativeLayout>

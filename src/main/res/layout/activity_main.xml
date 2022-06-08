@@ -7,29 +7,18 @@
     tools:context=".MainActivity">
 
 
-    <Button android:id="@+id/btn_add"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
-        android:text="Add Activity"/>
+
 
     <Button android:id="@+id/btn_Show"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="60dip"
+        android:textSize="18dp"
         android:text="Show Activity"/>
 
-    <Button android:id="@+id/btn_del"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="110dip"
-        android:text="Delete Activity"/>
 
-    <Button android:id="@+id/btn_update"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dip"
-        android:text="Update Activity"/>
+
+
 
 
 

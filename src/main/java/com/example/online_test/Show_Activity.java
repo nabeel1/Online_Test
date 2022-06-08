@@ -72,10 +72,12 @@ public class Show_Activity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... arg0) {
+
             HttpHandler sh = new HttpHandler();
 
             // Making a request to url and getting response
             String jsonStr = sh.makeServiceCall(url);
+
 
             Log.e(TAG, "Response from url: " + jsonStr);
 
